@@ -1,16 +1,9 @@
 import React from 'react';
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Select from 'react-select';
 
 // Images
 import imageTwo from '../../assets/profile/image-2.jpg';
-
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' },
-];
 
 export const SignUp = () => {
   return (

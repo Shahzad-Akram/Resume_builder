@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container } from 'react-bootstrap';
 
 // Images
 import imageOne from '../assets/about/image-2.jpg';
@@ -12,116 +12,213 @@ export const Home = () => {
           className='d-flex align-items-center justify-content-center text-white text-center'
           style={{
             paddingTop: 70,
-            height: '85vh',
+            height: '250px',
             boxShadow: 'inset 0 0 0 1000px rgba(40,40,50,.4)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: '50% 85%',
             backgroundImage: `url(${imageOne})`,
           }}
         >
           <div>
-            <h1>Welcome to Castro</h1>
-            <p className='col-md-8 col-lg-6 mx-auto '>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-              dolore pariatur suscipit ut aliquid, aliquam saepe, deleniti
-              tempora architecto accusamus quaerat distinctio ipsum fugiat
-              perferendis minus! Minima error natus fugiat?
-            </p>
+            <h1>Welcome to My Profile</h1>
           </div>
         </div>
       </section>
       <section className='pb-5'>
         <Container>
-          <div className='mb-5 col-lg-10 px-0 mx-auto'>
-            <h1 className='text-center font-weight-light'>
-              "Special edition features full design with front and back details.
-              Limited supply"
-            </h1>
-          </div>
+          <div className='scroll-box'>
+            <main className='grid-container shadow-lg vh-100'>
+              <section className='div2 p-5'>
+                <div className='mb-4'>
+                  <h5 className='text-capitalize font-weight-bold mb-3'>
+                    About me
+                  </h5>
+                  <p className='small'>
+                    Hello! I’m Robert Smith. Senior Web Developer specializing
+                    in front end development. Experienced with all stages of the
+                    development cycle for dynamic web projects. Well-versed in
+                    numerous programming languages including JavaScript, SQL,
+                    and C. Stng background in project management and customer
+                    relations.
+                  </p>
+                </div>
 
-          <div className='border-top my-5'></div>
+                <div className='mb-4'>
+                  <h5 className='text-capitalize font-weight-bold mb-3'>
+                    Contact Information
+                  </h5>
 
-          <Row className='justify-content-between'>
-            <Col md={5}>
-              <div>
+                  <p className='small row'>
+                    <Col lg={3} className='font-weight-bold text-capitalize'>
+                      ADDRESS
+                    </Col>
+                    <Col>24058, Belgium, Brussels, Liutte 27, BE</Col>
+                  </p>
+                  <p className='small row'>
+                    <Col lg={3} className='font-weight-bold text-capitalize'>
+                      E-MAIL
+                    </Col>
+                    <Col>robertsmith@company.com</Col>
+                  </p>
+                  <p className='small row'>
+                    <Col lg={3} className='font-weight-bold text-capitalize'>
+                      PHONE
+                    </Col>
+                    <Col>+1 256 254 84 56</Col>
+                  </p>
+                </div>
+              </section>
+              <section className='div1 p-5'>
+                <h5 className='text-capitalize font-weight-bold mb-3'>
+                  Work Experience
+                </h5>
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    PINEAPPLE
+                  </h6>
+                  <h6 className='text-capitalize font-weight-bold mb-2 text-black-50'>
+                    <span className='small'>FULL STACK DEVELOPER</span>
+                  </h6>
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2014 - 2016</small>
+                  </h6>
+                  <p className='small'>
+                    Worked as part of a multi-disciplinary team, carrying out
+                    ad-hoc tasks as requested by the IT Manager. Had a specific
+                    brief to ensure the websites build for customer’s precisely
+                    matched their requirements.developers and marketers.
+                  </p>
+                </div>
+
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    MACROSOOFT
+                  </h6>
+                  <h6 className='text-capitalize font-weight-bold mb-2 text-black-50'>
+                    <span className='small'>WEB DEVELOPER</span>
+                  </h6>
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2011 - 2014</small>
+                  </h6>
+                  <p className='small'>
+                    I was responsible for working on a range of projects,
+                    designing appealing websites and interacting on a daily
+                    basis with graphic designers, back-end developers and
+                    marketers.
+                  </p>
+                </div>
+
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    JOOJLE
+                  </h6>
+                  <h6 className='text-capitalize font-weight-bold mb-2 text-black-50'>
+                    <span className='small'>
+                      SYSTEMS ANALYST / WEB DEVELOPER
+                    </span>
+                  </h6>
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2003 - 2006</small>
+                  </h6>
+                  <p className='small'>
+                    Rebuilt and enhanced existing ASP B2C site with ASP.NET 2.0
+                    Framework and tools. Technology consists of ASP.NET 2.0
+                    (C#), IIS, Microsoft SQL Server 2005, Stored Procedures &
+                    PayPal Instant Payment Notification.
+                  </p>
+                </div>
+              </section>
+              <section className='div3'>
                 <img
-                  className='rounded-lg shadow-sm mb-4'
+                  style={{ objectFit: 'cover', objectPosition: '50% 20%' }}
                   height='100%'
                   width='100%'
-                  src='https://images.unsplash.com/photo-1431102996501-f6379b157668?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
-                  alt=''
+                  alt='user'
+                  src='https://source.unsplash.com/random'
                 />
-                <h2 className='text-uppercase mb-2'>THE LAST DRAGON TANK</h2>
-                <p className='text-black-50 small'>
-                  Who's the master? You are when you're sporting this
-                  exceptional detailed print. This premium tank won't make you
-                  glow, but it'll feel good as heck on you.
-                </p>
-              </div>
-            </Col>
-            <Col md={5} className='mt-5 pt-4'>
-              <div>
-                <img
-                  className='rounded-lg shadow-sm mb-4'
-                  height='100%'
-                  width='100%'
-                  src='https://images.unsplash.com/photo-1582517378602-f109b395ce40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80'
-                  alt=''
-                />
-                <h2 className='text-uppercase mb-2'>QUEEN GRACE</h2>
-                <p className='text-black-50 small'>
-                  Who's the master? You are when you're sporting this
-                  exceptional detailed print. This premium tank won't make you
-                  glow, but it'll feel good as heck on you.
-                </p>
-              </div>
-            </Col>
-          </Row>
+              </section>
+              <section className='div4 mt-n5 p-4 text-center d-flex flex-column align-items-center justify-content-center'>
+                <h1>Robert Smith</h1>
+                <h3>Developer and businessman</h3>
+              </section>
+              <section className='div5 p-5 h-100'>
+                <h5 className='text-capitalize font-weight-bold mb-3'>
+                  Education
+                </h5>
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    Master of Information Technology
+                  </h6>
 
-          <Row className='justify-content-between'>
-            <Col md={5}>
-              <div>
-                <img
-                  className='rounded-lg shadow-sm mb-4'
-                  height='100%'
-                  width='100%'
-                  src='https://images.unsplash.com/photo-1588070904976-ae5e41e2598d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80'
-                  alt=''
-                />
-                <h2 className='text-uppercase mb-2'>THE LAST DRAGON TANK</h2>
-                <p className='text-black-50 small'>
-                  Who's the master? You are when you're sporting this
-                  exceptional detailed print. This premium tank won't make you
-                  glow, but it'll feel good as heck on you.
-                </p>
-              </div>
-            </Col>
-            <Col md={5} className='mt-5 '>
-              <div>
-                <img
-                  className='rounded-lg shadow-sm mb-4'
-                  height='100%'
-                  width='100%'
-                  src='https://cdn.pixabay.com/photo/2018/04/07/13/13/handshake-3298455_1280.jpg'
-                  alt=''
-                />
-                <h2 className='text-uppercase mb-2'>QUEEN GRACE</h2>
-                <p className='text-black-50 small'>
-                  Who's the master? You are when you're sporting this
-                  exceptional detailed print. This premium tank won't make you
-                  glow, but it'll feel good as heck on you.
-                </p>
-              </div>
-            </Col>
-          </Row>
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2012 - 2014</small>
+                  </h6>
+                  <p className='small'>MIT&T</p>
+                </div>
 
-          <div className='border-top my-5'></div>
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    Bachelor Computer Engineering
+                  </h6>
 
-          <div className='col-lg-10 px-0 mx-auto'>
-            <h1 className='text-center font-weight-light'>
-              "A percentage of this sale will go towards charities committed to
-              mental health services and awareness"
-            </h1>
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2008 - 2012</small>
+                  </h6>
+                  <p className='small'>HARWARG UNIVERSITEY</p>
+                </div>
+
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    Certificate for courses of Computer Science
+                  </h6>
+
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2007 - 2008</small>
+                  </h6>
+                  <p className='small'>STANFOORB UNIVERSITEY</p>
+                </div>
+
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    Certificate for courses of Computer Science
+                  </h6>
+
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2007 - 2008</small>
+                  </h6>
+                  <p className='small'>STANFOORB UNIVERSITEY</p>
+                </div>
+
+                <div className='mb-4'>
+                  <h6 className='text-capitalize font-weight-bold mb-2'>
+                    Certificate for courses of Computer Science
+                  </h6>
+
+                  <h6 className='text-capitalize mb-2'>
+                    <small className='font-weight-bold '>2007 - 2008</small>
+                  </h6>
+                  <p className='small'>STANFOORB UNIVERSITEY</p>
+                </div>
+              </section>
+              <section className='div6 p-5 h-100'>
+                <h5 className='text-capitalize font-weight-bold mb-3'>
+                  Text Section
+                </h5>
+                <div className='mb-4'>
+                  <p className='small'>
+                    Hello! I’m Robert Smith and this is custom editor section.
+                    You can add here any text or "Strikethrough" text and even
+                    you can add bulleted or numbered text and even you will be
+                    able to add blockquot text. You can align this text to
+                    left/right/center. One of the most interesting options is to
+                    divide this section to "One half" "One Third" and "One
+                    Fourth". You can use this for Honors or Achievments or
+                    Awards sections. You can insert images and photos right in
+                    this editor!
+                  </p>
+                </div>
+              </section>
+            </main>
           </div>
         </Container>
       </section>

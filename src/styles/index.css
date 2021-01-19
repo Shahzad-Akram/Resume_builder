@@ -5,13 +5,13 @@ body {
 }
 
 .bg-pattern-1 {
-  background-image: url(./assets/bg-image-2.svg);
+  background-image: url(../assets/bg-image-2.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .bg-pattern {
-  background-image: url(./assets/bg-image-2.svg),
+  background-image: url(../assets/bg-image-2.svg),
     radial-gradient(circle, #52d4d4 80%, rgba(63, 94, 251, 1) 100%);
 
   background-repeat: no-repeat;

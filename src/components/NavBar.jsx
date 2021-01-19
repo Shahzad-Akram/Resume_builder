@@ -39,19 +39,13 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto text-center my-3'>
-            {/* <NavLink className='mr-3 mb-3 mb-md-0' to='/market'>
-              Markets
-            </NavLink> */}
             <NavLink className='mr-3 mb-3 mb-md-0' to='/'>
+              Profile View
+            </NavLink>
+            <NavLink className='mr-3 mb-3 mb-md-0' to='/profile'>
               Profile
             </NavLink>
 
-            {/* <NavLink className='mr-3 mb-3 mb-md-0' to='/about'>
-              About
-            </NavLink>
-            <NavLink className='mr-3 mb-3 mb-md-0' to='/contact'>
-              Contact us
-            </NavLink> */}
             <NavLink className='mr-3 mb-3 mb-md-0' to='/sign-up'>
               Signup
             </NavLink>
