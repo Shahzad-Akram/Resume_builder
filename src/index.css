@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.bg-pattern-1 {
+  background-image: url(./assets/bg-image-2.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.bg-pattern {
+  background-image: url(./assets/bg-image-2.svg),
+    radial-gradient(circle, #52d4d4 80%, rgba(63, 94, 251, 1) 100%);
+
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.navbar.active {
+  background-color: #1680b4 !important;
+}
+
+a {
+  color: #ddd;
+}
+
+a:hover {
+  color: #17a2b8;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+a:focus,
+a.active {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+.form-check-label {
+  font-size: 12px;
+}
+
+.btn-bt-box-1 {
+  background-color: #eee;
+  position: relative;
+}
+
+.btn-bt-box-1:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 0.05rem #666;
+  transition: all 0.3s ease;
+}
+
+.btn-bt-box-1:hover .bt-box-1__item {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.btn-bt-box-1:focus .bt-box-1__item {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.bt-box-1__item {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.avatar-container {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 0.1rem #000;
+}
+
+.avatar-container img {
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.avatar-container input {
+  opacity: 0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 765px) {
+  .navbar-collapse {
+    transition: all 1s ease;
+    position: absolute;
+    background-color: #00000070;
+    z-index: 999;
+    top: 75px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .vh-100-none-on-small {
+    padding: 70px 0;
+    height: unset !important;
+  }
+}
