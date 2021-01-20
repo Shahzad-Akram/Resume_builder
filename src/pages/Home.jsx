@@ -26,8 +26,8 @@ export const Home = () => {
       </section>
       <section className='pb-5'>
         <Container>
-          <div className='scroll-box'>
-            <main className='grid-container shadow-lg vh-100'>
+          <div>
+            <main className='grid-container shadow-lg'>
               <section className='div2 p-5'>
                 <div className='mb-4'>
                   <h5 className='text-capitalize font-weight-bold mb-3'>

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 import './styles/grid.css';
 import './styles/scroll.styles.css';
+import './styles/animation.css';
 import App from './App';
 
 import store from './app/store';
