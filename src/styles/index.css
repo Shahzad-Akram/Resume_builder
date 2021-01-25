@@ -92,6 +92,22 @@ a.active {
   cursor: pointer;
 }
 
+/* === */
+
+.div1-color {
+  background-color: #fba574;
+}
+.div2-color {
+  background-color: #7ec9cf;
+}
+
+.div3-color {
+  background-color: #f8bd48;
+}
+.div4-color {
+  background-color: #bcaec7;
+}
+
 @media only screen and (max-width: 765px) {
   .navbar-collapse {
     transition: all 1s ease;
