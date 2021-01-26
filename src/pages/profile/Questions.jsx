@@ -88,7 +88,7 @@ export const Questions = () => {
           <div className='shadow-sm border p-4 rounded-lg'>
             <h4>Questions Section</h4>
             <Form>
-              <div className='scroll-box' style={{ height: 450 }}>
+              <div>
                 <Table responsive bordered>
                   <thead>
                     <tr>

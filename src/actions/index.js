@@ -10,16 +10,15 @@ function setAuthorizationToken(token) {
 
 export const loginUser = (dispatch, data) => {
   setAuthorizationToken(data.accessToken);
-  console.log(data);
+
   localStorage.setItem("auth-admin", JSON.stringify(data));
-  console.log(localStorage);
+
   dispatch({
     type: "USER_LOGIN",
     payload: data,
   });
 };
 export const isLoggedIn = (dispatch) => {
-  console.log(localStorage);
   dispatch({
     type: "IS_USER_LOGIN",
   });
