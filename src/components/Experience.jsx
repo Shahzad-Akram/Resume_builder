@@ -9,7 +9,7 @@ export const Experience = ({ id, setShow }) => {
   const { register, handleSubmit, watch, errors } = useForm();
 
   const onSubmit = (data) => {
-    const data2 = { id, education: [data] };
+    const data2 = { id, experience: [data] };
     axios
       .post("users/update", data2)
       .then((res) => {

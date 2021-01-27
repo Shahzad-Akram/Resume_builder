@@ -17,8 +17,12 @@ export const SignUp = () => {
     axios
       .post("users/sign_up", data)
       .then((res) => {
-        history.push("/sign-in");
-        toast.success("Please Sign in to the system", 1000);
+        if (res.data.success === true) {
+          history.push("/sign-in");
+          toast.success("Please Sign in to the system", 1000);
+        } else {
+          toast.error(res.data.message, 1000);
+        }
       })
       .catch((err) => toast.error("Something went wrong", 1000));
   };

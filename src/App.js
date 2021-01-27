@@ -13,6 +13,8 @@ import { Profile } from "./pages/profile/Profile";
 import ProtectedRoutes from "./HOC/ProtectedRoutes";
 
 import { Questions } from "./pages/profile/Questions";
+import { QuestionsView } from "./pages/view/QuestionsView";
+import { Admin } from "./pages/profile/Admin";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <ToastContainer />
       <NavBar />
       <Switch>
+        <Route exact path="/admin" component={Admin} />
+        <Route exact path="/questions-view" component={QuestionsView} />
         <Route exact path="/sign-in" component={SignIn} />
         <Route exact path="/sign-up" component={SignUp} />
         <ProtectedRoutes>

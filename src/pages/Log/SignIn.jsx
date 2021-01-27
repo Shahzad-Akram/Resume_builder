@@ -22,9 +22,14 @@ export const SignIn = () => {
       .post("users/sign_in", data)
       .then((res) => {
         console.log(res);
-        loginUser(dispatch, res.data);
-        history.push("/profile");
-        toast.success("Sign In Successfull", 1000);
+        if (res.data.success === true) {
+          console.log(res);
+          loginUser(dispatch, res.data);
+          history.push("/profile");
+          toast.success("Sign In Successfull", 1000);
+        } else {
+          toast.error(res.data.message, 1000);
+        }
       })
       .catch((err) => console.log(err));
   };

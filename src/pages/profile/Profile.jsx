@@ -5,6 +5,9 @@ import { Education } from "../../components/Education";
 import { Experience } from "../../components/Experience";
 import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // icons
 import { faPencilAlt, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +22,27 @@ export const Profile = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const data2 = {
+      profile_image: data.profile_image,
+      id: user._id,
+    };
+    const formdata = new FormData();
+    formdata.append("profile_image", data.profile_image[0]);
+    formdata.append("id", user._id);
+    console.log(formdata);
+    axios
+      .post("users/update", formdata)
+      .then((res) => {
+        console.log(res.data.success);
+        if (res.data.success === true) {
+          toast.success("Profile Updated", 1000);
+        } else {
+          toast.error("Something Went Wrong", 1000);
+        }
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <section className="pt-5 d-flex align-items-center my-5">
@@ -30,7 +53,7 @@ export const Profile = () => {
         <Col>
           <div className="shadow-sm border p-4 rounded-lg">
             <h4 className="text-center">Your profile</h4>
-            <Form>
+            <Form onSubmit={handleSubmit(onSubmit)}>
               <div className="my-4 d-flex flex-column align-items-center">
                 <Form.Label>Change Avatar</Form.Label>
                 <span className="avatar-container">
@@ -40,7 +63,7 @@ export const Profile = () => {
                     src="https://graph.facebook.com/100008343750912/picture?width=400&height=400"
                     alt=""
                   />
-                  <input type="file" />
+                  <input type="file" name="profile_image" ref={register} />
                 </span>
               </div>
 

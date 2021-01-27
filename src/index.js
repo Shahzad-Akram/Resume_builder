@@ -15,7 +15,7 @@ import thunk from "redux-thunk";
 import * as serviceWorker from "./serviceWorker";
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 
-axios.defaults.baseURL = "http://localhost:3000/";
+axios.defaults.baseURL = "https://resume-backend-api.herokuapp.com/";
 
 const queryClient = new QueryClient();
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
