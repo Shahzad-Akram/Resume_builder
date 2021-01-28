@@ -131,7 +131,7 @@ export const Profile = () => {
                           elit.
                         </p>
                       </div>
-                      <div className="bt-box-1__item ">
+                      {/* <div className="bt-box-1__item ">
                         <Button
                           variant="success"
                           className="p-0 rounded-circle text-white d-flex align-items-center justify-content-center mr-1"
@@ -148,7 +148,7 @@ export const Profile = () => {
                         >
                           <FontAwesomeIcon size="xs" icon={faTimes} />
                         </Button>
-                      </div>
+                      </div> */}
                     </Button>
                   </Form.Group>
                 </Col>
@@ -182,7 +182,7 @@ export const Profile = () => {
                         </p>
                       </div>
 
-                      <div className="bt-box-1__item ">
+                      {/* <div className="bt-box-1__item ">
                         <Button
                           variant="success"
                           className="p-0 rounded-circle text-white d-flex align-items-center justify-content-center mr-1"
@@ -199,7 +199,7 @@ export const Profile = () => {
                         >
                           <FontAwesomeIcon size="xs" icon={faTimes} />
                         </Button>
-                      </div>
+                      </div> */}
                     </Button>
                   </Form.Group>
                 </Col>
@@ -264,7 +264,7 @@ export const Profile = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="bt-box-1__item ">
+                      {/* <div className="bt-box-1__item ">
                         <Button
                           variant="success"
                           className="p-0 rounded-circle text-white d-flex align-items-center justify-content-center mr-1"
@@ -281,7 +281,7 @@ export const Profile = () => {
                         >
                           <FontAwesomeIcon size="xs" icon={faTimes} />
                         </Button>
-                      </div>
+                      </div> */}
                     </Button>
                   </Form.Group>
                 </Col>
@@ -325,7 +325,7 @@ export const Profile = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="bt-box-1__item ">
+                      {/* <div className="bt-box-1__item ">
                         <Button
                           variant="success"
                           className="p-0 rounded-circle text-white d-flex align-items-center justify-content-center mr-1"
@@ -342,7 +342,7 @@ export const Profile = () => {
                         >
                           <FontAwesomeIcon size="xs" icon={faTimes} />
                         </Button>
-                      </div>
+                      </div> */}
                     </Button>
                   </Form.Group>
                 </Col>
