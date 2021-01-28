@@ -135,7 +135,7 @@ export const Experience = ({ id, setShow }) => {
             type="submit"
             className="text-capitalize py-3"
           >
-            <small>Save Education</small>
+            <small>Save Experience</small>
           </Button>
         </div>
       </Form>
